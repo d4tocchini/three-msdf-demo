@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Three BMFont Text</title>
+	<meta charset="UTF-8" />
+	<style>
+		* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		}
+
+		body {
+		background-color: #000;
+		overflow: hidden;
+		font-family: sans-serif;
+		}
+
+		canvas {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<canvas id="app"></canvas>
+	<script>
+		window.global = window;
+		global.THREE = require("three");
+		// global.require = REQUIRE;
+		// require('process').env.NODE_PATH = location.pathname + "/../node_modules"
+	</script>
+	<script type="module" src="./src/index.mjs">
+	</script>
+</body>
+
+</html>
